@@ -1,0 +1,27 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local secrets and runtime data
+.env
+.env.local
+data/
+generated_notes/
+local_materials/
+
+# Tooling and test artifacts
+.playwright-mcp/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.broken.json
+
+# OS files
+.DS_Store
+Thumbs.db
