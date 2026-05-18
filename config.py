@@ -7,9 +7,6 @@ from pathlib import Path
 from dotenv import load_dotenv
 
 
-load_dotenv()
-
-
 @dataclass(frozen=True)
 class Settings:
     papers_dir: Path
@@ -22,6 +19,8 @@ class Settings:
 
 def get_settings() -> Settings:
     root = Path(__file__).resolve().parent
+    load_dotenv(root / ".env", override=True)
+
     papers_dir = Path(os.getenv("PAPERS_DIR", ".")).expanduser()
     cache_path = Path(os.getenv("CACHE_PATH", "data/cache.json")).expanduser()
 
