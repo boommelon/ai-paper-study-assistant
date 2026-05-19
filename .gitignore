@@ -1,27 +1,28 @@
-# Python cache
+# Python
 __pycache__/
 *.py[cod]
 *.pyo
-
-# Virtual environments
 .venv/
 venv/
-env/
 
-# Local secrets and runtime data
+# Node
+frontend/node_modules/
+frontend/dist/
+
+# Secrets and runtime data
 .env
-.env.local
-data/
-generated_notes/
+backend/.env
+backend/data/
+
+# Local materials (user's own files)
 local_materials/
 
-# Tooling and test artifacts
-.playwright-mcp/
+# Tooling
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
 *.broken.json
 
-# OS files
+# OS
 .DS_Store
 Thumbs.db
